@@ -19,15 +19,15 @@ html, body {
 }
 
 
-h1, h2, h3, h4, strong {
+h1, h2, h3, h4, h5, h6, strong {
     color: var(--mainText);
-    font-family: "Merriweather", serif;
+    font-family: "Faculty Glyphic", sans-serif;
     font-weight: normal;
 }
 
 p, li, span, label, input, textarea {
     color: var(--secondaryText);
-    font-family: "Roboto", sans-serif;
+    font-family: "Raleway", sans-serif;
 }
 
 a {
@@ -61,6 +61,7 @@ ul {
     justify-content: center;
     align-items: center;
     min-height: 10em;
+    font-weight: 700;
 }
 
 .intro-wrapper {
@@ -238,6 +239,45 @@ ul {
     display: grid;
     align-content: center;
     text-align: center;
+}
+
+.post-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 320px);
+    gap: 20px;
+    justify-content: center;
+    padding: 15px;
+}
+
+.post {
+    border: 1px solid var(--borderColor);
+
+    box-shadow:  -1px 1px 3px -1px rgba(0,0,0,0.8);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.8);
+    -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.8);
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.post-preview {
+    background-color: #fff;
+    padding: 15px;
+}
+
+.post-title {
+    color: black;
+    margin: 0;
+    font-size: large;
+}
+
+.post-intro {
+    color: #4b5156;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {
